@@ -78,7 +78,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3aq-gG-PPe">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3aq-gG-PPe">
                                                 <rect key="frame" x="69" y="0.0" width="266" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -95,7 +95,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcj-4t-l35">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter phone number here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcj-4t-l35">
                                                 <rect key="frame" x="69" y="0.0" width="266" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -112,7 +112,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4FZ-Vu-18F">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email address here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4FZ-Vu-18F">
                                                 <rect key="frame" x="69" y="0.0" width="266" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -123,6 +123,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0o-qz-i3l">
                                         <rect key="frame" x="0.0" y="114" width="335" height="30"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveButtonTapped:" destination="Ux0-vf-Jyg" eventType="touchUpInside" id="8FK-q5-fsA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -139,7 +142,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0yw-Vy-Wqe"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="xtT-kf-vGR"/>
+                    <navigationItem key="navigationItem" title="Title" id="xtT-kf-vGR">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="0zP-q8-EGN">
+                            <connections>
+                                <action selector="done:" destination="Ux0-vf-Jyg" id="aNd-KG-efn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="4FZ-Vu-18F" id="PFh-lA-Nsx"/>
+                        <outlet property="nameTextField" destination="3aq-gG-PPe" id="KIu-RM-qcn"/>
+                        <outlet property="phoneTextField" destination="rcj-4t-l35" id="JaJ-Bw-Zmc"/>
+                        <outlet property="saveOutlet" destination="w0o-qz-i3l" id="pFP-GF-hmX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3k-S9-QRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

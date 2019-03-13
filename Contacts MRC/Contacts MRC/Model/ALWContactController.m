@@ -20,19 +20,23 @@
 - (instancetype)init {
     self = [super init];
     if (self != nil) {
-        _internalContacts = [[NSMutableArray alloc] init];
+        _internalContacts = [[[NSMutableArray alloc] init] autorelease];
     }
     return self;
 }
 
 // Define a getter
 - (NSArray *)contacts {
+    
+    // I "own" this copy - how do I make sure to release this?
     return [self.internalContacts copy];
+    
+    //return [[self.internalContacts copy] autorelease];
 }
 
 - (ALWContact *)createContactWithName:(NSString *)name phoneNumber:(NSString *)phoneNumber email:(NSString *)email {
     
-    ALWContact *newContact = [[ALWContact alloc] initWithName:name phoneNumber:phoneNumber email:email];
+    ALWContact *newContact = [[[ALWContact alloc] initWithName:name phoneNumber:phoneNumber email:email] autorelease];
     
     return newContact;
 }
