@@ -12,6 +12,10 @@
 		84EDD37B223994EE00B56011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EDD37A223994EE00B56011 /* Assets.xcassets */; };
 		84EDD37E223994EE00B56011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EDD37C223994EE00B56011 /* LaunchScreen.storyboard */; };
 		84EDD381223994EE00B56011 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDD380223994EE00B56011 /* main.m */; };
+		84EDD38D223996E600B56011 /* ALWContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDD38C223996E600B56011 /* ALWContactsTableViewController.m */; };
+		84EDD3902239989700B56011 /* ALWContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDD38F2239989700B56011 /* ALWContactDetailViewController.m */; };
+		84EDD39322399AFB00B56011 /* ALWContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDD39222399AFB00B56011 /* ALWContact.m */; };
+		84EDD39622399E8200B56011 /* ALWContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDD39522399E8200B56011 /* ALWContactController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,14 @@
 		84EDD37D223994EE00B56011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84EDD37F223994EE00B56011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EDD380223994EE00B56011 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84EDD38B223996E600B56011 /* ALWContactsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWContactsTableViewController.h; sourceTree = "<group>"; };
+		84EDD38C223996E600B56011 /* ALWContactsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWContactsTableViewController.m; sourceTree = "<group>"; };
+		84EDD38E2239989700B56011 /* ALWContactDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWContactDetailViewController.h; sourceTree = "<group>"; };
+		84EDD38F2239989700B56011 /* ALWContactDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWContactDetailViewController.m; sourceTree = "<group>"; };
+		84EDD39122399AFB00B56011 /* ALWContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWContact.h; sourceTree = "<group>"; };
+		84EDD39222399AFB00B56011 /* ALWContact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWContact.m; sourceTree = "<group>"; };
+		84EDD39422399E8200B56011 /* ALWContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWContactController.h; sourceTree = "<group>"; };
+		84EDD39522399E8200B56011 /* ALWContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWContactController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,10 @@
 		84EDD3892239951A00B56011 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				84EDD38B223996E600B56011 /* ALWContactsTableViewController.h */,
+				84EDD38C223996E600B56011 /* ALWContactsTableViewController.m */,
+				84EDD38E2239989700B56011 /* ALWContactDetailViewController.h */,
+				84EDD38F2239989700B56011 /* ALWContactDetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -94,6 +110,10 @@
 		84EDD38A2239952D00B56011 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84EDD39122399AFB00B56011 /* ALWContact.h */,
+				84EDD39222399AFB00B56011 /* ALWContact.m */,
+				84EDD39422399E8200B56011 /* ALWContactController.h */,
+				84EDD39522399E8200B56011 /* ALWContactController.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +190,10 @@
 			files = (
 				84EDD381223994EE00B56011 /* main.m in Sources */,
 				84EDD373223994ED00B56011 /* AppDelegate.m in Sources */,
+				84EDD39322399AFB00B56011 /* ALWContact.m in Sources */,
+				84EDD3902239989700B56011 /* ALWContactDetailViewController.m in Sources */,
+				84EDD38D223996E600B56011 /* ALWContactsTableViewController.m in Sources */,
+				84EDD39622399E8200B56011 /* ALWContactController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
