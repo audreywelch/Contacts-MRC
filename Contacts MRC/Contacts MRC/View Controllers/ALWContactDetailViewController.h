@@ -15,7 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ALWContactDetailViewController : UIViewController
 
-@property ALWContact *contact;
+// Could these be weak ?
+@property (weak) ALWContact *contact;
 @property ALWContactController *contactController;
 
 @end

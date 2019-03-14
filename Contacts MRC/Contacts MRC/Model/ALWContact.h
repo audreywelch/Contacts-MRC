@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ALWContact : NSObject
 
-@property (nonatomic) NSString *name;
-@property (nonatomic) NSString *phoneNumber;
-@property (nonatomic) NSString *email;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *phoneNumber;
+@property (nonatomic, retain) NSString *email;
 
 - (instancetype)initWithName:(NSString *)name phoneNumber:(NSString *)phoneNumber email:(NSString *)email;
 

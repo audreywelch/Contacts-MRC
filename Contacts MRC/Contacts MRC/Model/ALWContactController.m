@@ -27,11 +27,8 @@
 
 // Define a getter
 - (NSArray *)contacts {
-    
-    // I "own" this copy - how do I make sure to release this?
+
     return [self.internalContacts copy];
-    
-    //return [[self.internalContacts copy] autorelease];
 }
 
 - (ALWContact *)createContactWithName:(NSString *)name phoneNumber:(NSString *)phoneNumber email:(NSString *)email {

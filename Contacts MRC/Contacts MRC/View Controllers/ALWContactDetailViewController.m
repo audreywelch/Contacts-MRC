@@ -44,13 +44,13 @@
     
     // The contact we're working with is either self.contact if editing
     // or nil, and we would create a new one
-    ALWContact *newContact = self.contact;
+    ALWContact *newContact = self.contact ?: [[[ALWContact alloc] init] autorelease];
     newContact.name = self.nameTextField.text;
     newContact.phoneNumber = self.phoneTextField.text;
     newContact.email = self.emailTextField.text;
     
     if (!isEditingContact) {
-        [[self contactController] addContact:newContact];
+        [self.contactController addContact:newContact];
         
         NSLog(@"%@", self.contactController.contacts);
     }
@@ -69,4 +69,5 @@
     [_saveOutlet release];
     [super dealloc];
 }
+
 @end
